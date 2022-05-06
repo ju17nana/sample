@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   get 'comments/create'
-  get 'boards/index'
-  get 'boards/show'
-  get 'boards/new'
-  get 'boards/edit'
+  resources :boards
   
   root to: 'posts#index'
   resources :posts do
